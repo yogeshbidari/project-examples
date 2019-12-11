@@ -9,7 +9,7 @@ lazy val root = (project in file(".")).
 
 
 
-publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
+publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
 credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin", "AP2Qq7MgHvUHHWTRZ5iEqxTgsAF")
 
 
