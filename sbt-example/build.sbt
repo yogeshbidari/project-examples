@@ -1,13 +1,17 @@
-ThisBuild / organization := "abc"
-ThisBuild / version := "2.0-SNAPSHOT"
-ThisBuild / scalacOptions += "-Ypartial-unification"
-ThisBuild / scalaVersion := "2.12.8"
-ThisBuild / publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
-ThisBuild / updateOptions := updateOptions.value.withGigahorse(false)
+lazy val root = (project in file(".")).
+  settings(
+    name := "SBT_Example",
+    version := "1.1-SNAPSHOT",
+    scalaVersion := "2.11.4"
+  )
+
+  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+
+  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
 
 
 
-resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+//resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
 
 
