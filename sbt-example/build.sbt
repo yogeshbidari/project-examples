@@ -5,7 +5,7 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11.4"
   )
 
- skip in publish := false,
+ skip in publish := true,
       releaseProcess := Seq[ReleaseStep](
             inquireVersions,
             setReleaseVersion,
