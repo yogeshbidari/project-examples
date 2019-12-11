@@ -5,9 +5,9 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11.4"
   )
 
-  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/TestRemote"
 
-  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
+  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/TestRemote")
 
   credentials += Credentials(new File("credentials.properties"))
 
