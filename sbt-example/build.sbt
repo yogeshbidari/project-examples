@@ -6,9 +6,9 @@ lazy val root = (project in file(".")).
   )
 
 
-  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+  resolvers += "Artifactory" at "http://localhost:8081/artifactory/jcenter"
 
-  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
+  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
 
   credentials += Credentials(new File("credentials.properties"))
 
