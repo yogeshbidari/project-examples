@@ -5,22 +5,16 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11.4"
   )
 
-  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+  //resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
-  //publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
-
-
-Scala
-publishTo := Some(
-  "Artifactory Realm" at
-    "https://shanmukha420.jfrog.io/shanmukha420/Test/" +
-      "bintray-hello-world-repo/bintray-hello-world-scala/;publish=1")
-//credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
-publishMavenStyle := true
+ publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
 
 
 
-//resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+
+
+
+resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
 
 
