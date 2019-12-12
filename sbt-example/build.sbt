@@ -7,12 +7,11 @@ lazy val root = (project in file(".")).
 
   //resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
+sbtPlugin := true
+
+publishMavenStyle := true
+
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
-
-
-
-
-
 
 resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
