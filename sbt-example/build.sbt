@@ -11,8 +11,21 @@ sbtPlugin := true
 
 publishMavenStyle := false
 
-publishArtifact := false,
-publishArtifact in (Compile, packageBin) := true
+//publishArtifact := false,
+//publishArtifact in (Compile, packageBin) := true
+
+publishArtifact in Test := true
+
+// enable publishing the jar produced by `test:package`
+publishArtifact in (Test, packageBin) := true
+
+// enable publishing the test API jar
+publishArtifact in (Test, packageDoc) := true
+
+// enable publishing the test sources jar
+publishArtifact in (Test, packageSrc) := true
+
+
 
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
 
