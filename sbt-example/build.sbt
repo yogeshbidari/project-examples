@@ -28,10 +28,9 @@ publishArtifact in (Test, packageDoc) := true
 publishArtifact in (Test, packageSrc) := true
 
 
+publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
 
- publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
-
-resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test"
 
 
 
