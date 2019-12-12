@@ -11,6 +11,9 @@ sbtPlugin := true
 
 publishMavenStyle := false
 
+publishArtifact := false,
+publishArtifact in (Compile, packageBin) := true
+
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
 
 resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
