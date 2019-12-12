@@ -9,7 +9,7 @@ lazy val root = (project in file(".")).
 
 sbtPlugin := true
 
-publishMavenStyle := true
+publishMavenStyle := false
 
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test/")
 
