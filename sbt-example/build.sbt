@@ -8,6 +8,8 @@ lazy val root = (project in file(".")).
 
 //resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
+enablePlugins(JavaServerAppPackaging, UniversalDeployPlugin)
+
 name := "scala-2.10"
 
 sbtPlugin := true
