@@ -7,6 +7,8 @@ lazy val root = (project in file(".")).
 
   //resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
+name := "scala-2.10"
+
 sbtPlugin := true
 
 publishMavenStyle := false
