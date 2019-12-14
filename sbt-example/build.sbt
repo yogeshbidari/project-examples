@@ -13,15 +13,17 @@ lazy val root = (project in file(".")).
   )
 
 releaseProcess := Seq[ReleaseStep](
-      inquireVersions,
-      setReleaseVersion,
-      commitReleaseVersion,
-      tagRelease,
-      releaseStepCommandAndRemaining("publish"),
-      setNextVersion,
-      commitNextVersion,
-      pushChanges
- )
+  checkSnapshotDependencies,
+  inquireVersions,
+  runClean,
+  runTest,
+  setReleaseVersion,
+  commitReleaseVersion,
+  tagRelease,
+  releaseStepCommandAndRemaining("publish"),
+  setNextVersion,
+  commitNextVersion,
+  pushChanges)
 
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
