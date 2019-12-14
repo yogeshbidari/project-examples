@@ -14,9 +14,9 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11.4"
   )
 
-publishArtifact in root := true
+ //publishArtifact in root := true
 
- resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+ //resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
 
