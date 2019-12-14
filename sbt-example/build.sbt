@@ -18,9 +18,9 @@ lazy val root = (project in file(".")).
 
 
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/"
+ publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
 
-// publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
-
+/*
 publishConfiguration := publishConfiguration.value.withOverwrite(true)
 publishTo := {
   val Artifactory = "https://shanmukha420.jfrog.io/"
@@ -29,6 +29,7 @@ publishTo := {
   else
     Some("releases"  at Artifactory + "/shanmukha420/Test")
 }
+*/
 
 
  credentials += Credentials(new File("credentials.properties"))
