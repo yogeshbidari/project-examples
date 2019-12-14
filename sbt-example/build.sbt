@@ -5,21 +5,6 @@ ThisBuild / version := "2.0-SNAPSHOT"
 name := "My Project"
 
 
-releaseProcess := Seq[ReleaseStep](
-  checkSnapshotDependencies,
-  inquireVersions,
-  runClean,
-  runTest,
-  setReleaseVersion,
-  commitReleaseVersion,
-  tagRelease,
-  releaseStepCommandAndRemaining("publish"),
-  setNextVersion,
-  commitNextVersion,
-  pushChanges)
-
-
-skip in publish := false
 
 
 lazy val root = (project in file(".")).
