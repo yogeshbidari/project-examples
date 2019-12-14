@@ -5,13 +5,6 @@ ThisBuild / version := "2.0-SNAPSHOT"
 name := "My Project"
 
 
-lazy val root = (project in file(".")).
-  settings(
-    name := "SBT_Example",
-    version := "1.1-SNAPSHOT",
-    scalaVersion := "2.11.4"
-  )
-
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,
   inquireVersions,
@@ -24,6 +17,17 @@ releaseProcess := Seq[ReleaseStep](
   setNextVersion,
   commitNextVersion,
   pushChanges)
+
+skip in publish in ThisBuild := true
+
+
+lazy val root = (project in file(".")).
+  settings(
+    name := "SBT_Example",
+    version := "1.1-SNAPSHOT",
+    scalaVersion := "2.11.4"
+  )
+
 
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
