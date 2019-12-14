@@ -16,3 +16,4 @@ lazy val root = (project in file(".")).
   credentials += Credentials(new File("credentials.properties"))
 
   libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
+
