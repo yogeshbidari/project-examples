@@ -1,3 +1,7 @@
+ThisBuild / organization := "com.abc.def"
+ThisBuild / version := "2.0-SNAPSHOT"
+
+
 lazy val root = (project in file(".")).
   settings(
     name := "SBT_Example",
