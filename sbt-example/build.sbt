@@ -20,6 +20,7 @@ lazy val root = (project in file(".")).
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
+publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
 
  credentials += Credentials(new File("credentials.properties"))
 
