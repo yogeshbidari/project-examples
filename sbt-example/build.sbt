@@ -14,7 +14,14 @@ lazy val root = (project in file(".")).
 
 
 
-publishArtifact in Test := true
+//publishArtifact in Test := true
+
+com.github.retronym.SbtOneJar.oneJarSettings
+artifact in (Compile, oneJar) ~= { art =>
+art.copy(`classifier` = Some("scala_2.10-0.1-SNAPSHOT.jar"))
+}
+
+addArtifact(artifact in (Compile, oneJar), oneJar)
 
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
