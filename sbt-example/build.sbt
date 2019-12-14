@@ -12,6 +12,10 @@ lazy val root = (project in file(".")).
 
  //publishArtifact in root := true
 
+
+
+publishArtifact in Test := true
+
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
