@@ -14,6 +14,7 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11.4"
   )
 
+publishArtifact in root := false
 
  resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
