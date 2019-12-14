@@ -18,7 +18,8 @@ releaseProcess := Seq[ReleaseStep](
   commitNextVersion,
   pushChanges)
 
-skip in publish in ThisBuild := true
+
+skip in publish := false
 
 
 lazy val root = (project in file(".")).
