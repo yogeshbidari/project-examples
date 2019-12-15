@@ -1,7 +1,7 @@
-ThisBuild / organization := "com.abc.def"
-ThisBuild / version := "2.0-SNAPSHOT"
+//ThisBuild / organization := "com.abc.def"
+//ThisBuild / version := "2.0-SNAPSHOT"
 
-name := "My Project"
+//name := "My Project"
 
 lazy val root = (project in file(".")).
   settings(
@@ -16,10 +16,8 @@ lazy val root = (project in file(".")).
 
 //publishArtifact in Test := true
 
-
- resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test"
- publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
-
+resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot/"
+publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot")
 /*
 publishConfiguration := publishConfiguration.value.withOverwrite(true)
 publishTo := {
