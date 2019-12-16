@@ -1,3 +1,12 @@
+import org.dmonix.sbt.MavenCentralPlugin._
+import sbt.Developer
+
+enablePlugins(MavenCentralPlugin)
+sbtPlugin := true
+
+name := "sbt-publish-settings-plugin"
+organization := "org.dmonix.sbt"
+
 lazy val root = (project in file(".")).
   settings(
     name := "SBT_Example",
