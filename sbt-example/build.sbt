@@ -7,8 +7,10 @@ lazy val root = (project in file(".")).
 
   resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot/"
 
-  publishTo in ThisBuild := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot/")
+  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot/")
 
-  credentials += Credentials(new File("credentials.properties"))
+  //credentials += Credentials(new File("credentials.properties"))
+
+credentials += Credentials("Artifactory Realm", "https://shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
   libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
