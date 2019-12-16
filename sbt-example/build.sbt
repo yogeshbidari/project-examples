@@ -1,4 +1,4 @@
-lazy val root = (project in file(".")).
+lazy val abc = (project in file(".")).
   settings(
     name := "SBT_Example",
     version := "1.1-SNAPSHOT",
