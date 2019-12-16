@@ -1,4 +1,4 @@
-
+assemblyJarName := s"AppName v${version.value}.jar"
 
 lazy val root = (project in file(".")).
   settings(
