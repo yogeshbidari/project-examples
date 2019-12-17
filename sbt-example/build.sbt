@@ -13,9 +13,9 @@ resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
 publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
 
-credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
+//credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
-//credentials += Credentials(new File("credentials.properties"))
+credentials += Credentials(new File("credentials.properties"))
 
 //credentials += Credentials("Artifactory Realm", "https://shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
