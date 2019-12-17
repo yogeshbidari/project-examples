@@ -1,5 +1,7 @@
 //assemblyJarName := s"AppName v${version.value}.jar"
 
+ThisBuild / useCoursier := false
+
 lazy val root = (project in file(".")).
   settings(
     name := "SBT_Example",
