@@ -19,4 +19,7 @@ credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin"
 
 //credentials += Credentials("Artifactory Realm", "https://shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
+addSbtPlugin("org.spark-packages" % "sbt-spark-package" % "0.2.6")
+
+
 libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
