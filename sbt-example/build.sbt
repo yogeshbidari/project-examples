@@ -15,6 +15,6 @@ lazy val root = (project in file(".")).
 
   //credentials += Credentials(new File("credentials.properties"))
 
-//credentials += Credentials("Artifactory Realm", "https://shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
+credentials += Credentials("Artifactory Realm", "https://shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
   libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
