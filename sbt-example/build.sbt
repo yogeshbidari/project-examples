@@ -11,7 +11,7 @@ lazy val root = (project in file(".")).
   
   //resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
-  publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot/")
+  //publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/example-snapshot/")
 
   //credentials += Credentials(new File("credentials.properties"))
 
