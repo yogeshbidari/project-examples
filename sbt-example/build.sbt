@@ -4,6 +4,9 @@
 
 //ThisBuild / scalaVersion := "2.12.10"
 
+import Dependencies._
+
+
 ThisBuild / scalaVersion := "2.12.10"
 
 
