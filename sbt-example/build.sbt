@@ -17,7 +17,7 @@ lazy val root = (project in file(".")).
     name := "SBT_Example",
     version := "1.1-SNAPSHOT",
     scalaVersion := "2.12.10"
-     libraryDependencies += scalaTest % Test
+     //libraryDependencies += scalaTest % Test
   )
 
 resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
