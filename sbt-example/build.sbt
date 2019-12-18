@@ -16,12 +16,7 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.12.10"
   )
 
-//resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
-
-resolvers ++= Seq[sbt.Resolver](
-    "Local Maven Repository@wildfly" at "file:///M:/",
-    "Local Maven Repository@common" at "file:///" + Path.userHome.absolutePath + "/.m2/repository"
-)
+resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
 
 
