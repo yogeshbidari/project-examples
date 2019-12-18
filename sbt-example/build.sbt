@@ -14,7 +14,7 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.11"
   )
 
-resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+//resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
 
 
 
