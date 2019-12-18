@@ -17,6 +17,7 @@ lazy val root = (project in file(".")).
     name := "SBT_Example",
     version := "1.1-SNAPSHOT",
     scalaVersion := "2.12.10"
+    libraryDependencies += "org.scala-lang" % "scala-library" % "2.12.10"
      //libraryDependencies += scalaTest % Test
   )
 
@@ -45,4 +46,5 @@ credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin"
 //libraryDependencies += "org.scala-lang" % "scala-library" % "2.12.10"
 //libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
 //libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % "test"
+libraryDependencies += "org.scala-lang" % "scala-library" % "2.12.10"
 
