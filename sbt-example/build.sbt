@@ -4,6 +4,8 @@
 
 //ThisBuild / scalaVersion := "2.12.10"
 
+ThisBuild / scalaVersion := "2.12.10"
+
 
 ThisBuild / organization := "com.abc"
 
@@ -11,7 +13,7 @@ lazy val root = (project in file(".")).
   settings(
     name := "SBT_Example",
     version := "1.1-SNAPSHOT",
-    scalaVersion := "2.11"
+    scalaVersion := "2.12.10"
   )
 
 resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
