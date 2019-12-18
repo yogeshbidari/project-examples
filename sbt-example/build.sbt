@@ -15,7 +15,9 @@ resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
   
 //resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
-publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
+publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
+
+//publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
 
 credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
