@@ -16,7 +16,7 @@ lazy val root = (project in file(".")).
   settings(
     name := "SBT_Example",
     version := "1.1-SNAPSHOT",
-    scalaVersion := "2.11.4"
+    scalaVersion := "2.12.10"
     libraryDependencies += "org.scala-lang" % "scala-library" % "2.12.10"
      //libraryDependencies += scalaTest % Test
   )
