@@ -37,5 +37,6 @@ credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin"
 
 libraryDependencies += "org.scala-lang" % "scala-library" % "2.12.10"
 libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
+dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion.value
 
 
