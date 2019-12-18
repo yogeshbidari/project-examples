@@ -21,7 +21,9 @@ lazy val root = (project in file(".")).
      //libraryDependencies += scalaTest % Test
   )
 
-resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+//resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+
+resolvers += "Typesafe releases" at "http://repo.typesafe.com/typesafe/releases"
 
 
 
