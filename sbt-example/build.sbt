@@ -11,7 +11,13 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.12.10"
   )
 
-resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+//resolvers += "Artifactory" at "https://shanmukha420.jfrog.io/shanmukha420/Test/"
+
+resolvers ++= Seq(
+    "snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
+    "releases" at "http://oss.sonatype.org/content/repositories/releases"
+    )
+
 
 //Resolvers += Resolver.sonatypeRepo("releases")
   
