@@ -33,11 +33,11 @@ resolvers += "Typesafe releases" at "http://repo.typesafe.com/typesafe/releases"
   
 //resolvers += "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"
 
-publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
+//publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test")
 
 //publishTo := Some("Artifactory Realm" at "https://shanmukha420.jfrog.io/shanmukha420/Test;build.timestamp=" + new java.util.Date().getTime)
 
-credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
+//credentials += Credentials("Artifactory Realm", "shanmukha420.jfrog.io", "admin", "Ph2Un3Ri2Ly1Wi")
 
 //credentials += Credentials(new File("credentials.properties"))
 
